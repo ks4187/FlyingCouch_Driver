@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlyingCouch_Driver</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyAm8DaRTIiRfsv1fgbxKl6tRVyK5DCM2q4</string>
+</resources>

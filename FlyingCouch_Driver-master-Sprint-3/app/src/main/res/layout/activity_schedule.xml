@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ScheduleActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Schedule"
+        android:id="@+id/schedHeaderText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/buttonUp"
+        android:layout_marginTop="158dp"
+        android:layout_below="@+id/schedHeaderText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="103dp"
+        android:layout_marginEnd="103dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/buttonDown"
+        android:layout_alignTop="@+id/buttonUp"
+        android:layout_alignLeft="@+id/buttonUp"
+        android:layout_alignStart="@+id/buttonUp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Order 1"
+        android:id="@+id/orderFirst"
+        android:layout_alignTop="@+id/buttonUp"
+        android:layout_alignRight="@+id/schedHeaderText"
+        android:layout_alignEnd="@+id/schedHeaderText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/buttonUp2"
+        android:layout_alignTop="@+id/button2Down"
+        android:layout_alignLeft="@+id/buttonUp"
+        android:layout_alignStart="@+id/buttonUp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/button2Down"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/buttonDown"
+        android:layout_alignLeft="@+id/buttonDown"
+        android:layout_alignStart="@+id/buttonDown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Order 2"
+        android:id="@+id/orderSecond"
+        android:layout_alignTop="@+id/button2Down"
+        android:layout_alignLeft="@+id/orderFirst"
+        android:layout_alignStart="@+id/orderFirst" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Order 3"
+        android:id="@+id/orderThird"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/buttonUp2"
+        android:layout_alignLeft="@+id/orderSecond"
+        android:layout_alignStart="@+id/orderSecond" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/button3Up"
+        android:layout_alignTop="@+id/orderThird"
+        android:layout_alignLeft="@+id/buttonUp2"
+        android:layout_alignStart="@+id/buttonUp2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/button3Down"
+        android:layout_alignTop="@+id/button3Up"
+        android:layout_alignLeft="@+id/button2Down"
+        android:layout_alignStart="@+id/button2Down" />
+
+</RelativeLayout>
