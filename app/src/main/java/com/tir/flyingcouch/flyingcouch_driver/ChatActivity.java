@@ -1,4 +1,4 @@
-package com.tir.flyingcouch;
+package com.tir.flyingcouch.flyingcouch_driver;
 
 import android.app.ListActivity;
 import android.content.SharedPreferences;
@@ -76,29 +76,11 @@ public class ChatActivity extends ListActivity {
             }
         });
 
-        /*mConnectedListener = mFirebaseRef.getRoot().child("./info/connected").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                boolean connected = (boolean) dataSnapshot.getValue();
-                if(connected){
-                    Toast.makeText(ChatActivity.this, "Connected to Firebase", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(ChatActivity.this, "Disconnected from Firebase", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-        });*/
-
     }
 
-    @Override
     public void onStop(){
         super.onStop();
-        mFirebaseRef.getRoot().child(".info/connected").removeEventListener(mConnectedListener);
+        //mFirebaseRef.getRoot().child(".info/connected").removeEventListener(mConnectedListener);
         mChatListAdapter.cleanup();
     }
 
@@ -108,7 +90,7 @@ public class ChatActivity extends ListActivity {
         if(mUsername == null){
             Random r = new Random();
 
-            mUsername = "TestAccount #" + r.nextInt(10);
+            mUsername = "Driver: ";
             prefs.edit().putString("username", mUsername).commit();
         }
     }

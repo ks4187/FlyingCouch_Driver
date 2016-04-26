@@ -1,4 +1,4 @@
-package com.tir.flyingcouch;
+package com.tir.flyingcouch.flyingcouch_driver;
 
 /**
  * Created by Karan Shah on 4/18/2016.

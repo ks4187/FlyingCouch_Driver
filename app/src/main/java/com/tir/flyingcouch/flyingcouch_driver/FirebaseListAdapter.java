@@ -1,4 +1,4 @@
-package com.tir.flyingcouch;
+package com.tir.flyingcouch.flyingcouch_driver;
 
 import android.app.Activity;
 import android.util.Log;
